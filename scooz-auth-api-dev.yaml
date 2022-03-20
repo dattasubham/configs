@@ -8,7 +8,8 @@ spring:
     name: scooz-auth-api
   data:
     mongodb:
-      uri: ${MONGO_URI:mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication}?authSource=${MONGO_AUTH_SOURCE:admin}&readPreference=primary&appname=${spring.application.name}&ssl=true
+      uri: ${MONGO_URI:mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication}
+      database: scooz_authentication
       auto-index-creation: true
 
 logging:
