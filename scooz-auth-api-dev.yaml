@@ -1,0 +1,15 @@
+server:
+  port: 10000
+  servlet:
+    context-path: /api/v1
+
+spring:
+  application:
+    name: scooz-auth-api
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication}?authSource=${MONGO_AUTH_SOURCE:admin}&readPreference=primary&appname=${spring.application.name}&ssl=true
+      auto-index-creation: true
+
+logging:
+  file: /tmp/logs/${spring.application.name}.log
