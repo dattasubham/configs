@@ -8,7 +8,7 @@ spring:
     name: scooz-auth-api
   data:
     mongodb:
-      uri: ${MONGO_URI:mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication}
+      uri: mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication
       database: scooz_authentication
       auto-index-creation: true
 
