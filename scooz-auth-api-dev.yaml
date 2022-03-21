@@ -14,3 +14,7 @@ spring:
 
 logging:
   file: /tmp/logs/${spring.application.name}.log
+
+jwt:
+  exp: 3600
+  secret: x72RAQeDEoRrOuvIPTaIxkmUNWgyr6x0
