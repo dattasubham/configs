@@ -12,6 +12,13 @@ spring:
       database: scooz_authentication
       auto-index-creation: true
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    instance:
+      preferIpAddress: true
+
 logging:
   file: /tmp/logs/${spring.application.name}.log
 
