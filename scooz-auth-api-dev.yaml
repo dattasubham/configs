@@ -11,12 +11,6 @@ spring:
       uri: mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication?authSource=admin&replicaSet=atlas-a6o6iy-shard-0&readPreference=primary&appname=scooz-auth-api&ssl=true
       database: scooz_authentication
       auto-index-creation: true
-  boot:
-    admin:
-      client:
-        url: http://localhost:8762
-        username: admin
-        password: adminPa33word
 
 eureka:
   client:
