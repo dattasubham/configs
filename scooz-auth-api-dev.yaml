@@ -11,6 +11,10 @@ spring:
       uri: mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/scooz_authentication?authSource=admin&replicaSet=atlas-a6o6iy-shard-0&readPreference=primary&appname=scooz-auth-api&ssl=true
       database: scooz_authentication
       auto-index-creation: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:8762
 
 eureka:
   client:
@@ -18,6 +22,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     instance:
       preferIpAddress: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+  endpoint:
+    health:
+      show-details: always
 
 logging:
   file: /tmp/logs/${spring.application.name}.log
