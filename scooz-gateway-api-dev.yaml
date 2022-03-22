@@ -29,6 +29,8 @@ management:
       show-details: always
 
 logging:
+  level:
+    com.netflix.discovery: OFF
   file: /tmp/logs/${spring.application.name}.log
 
 jwt:
