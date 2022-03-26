@@ -33,6 +33,10 @@ logging:
     com.netflix.discovery: OFF
   file: /tmp/logs/${spring.application.name}.log
 
+mongock:
+  migration-scan-package:
+    - org.mencom.sercoz.gateway.changelog
+
 jwt:
   exp: 3600
   secret: x72RAQeDEoRrOuvIPTaIxkmUNWgyr6x0
