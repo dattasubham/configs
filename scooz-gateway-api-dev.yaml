@@ -33,6 +33,10 @@ logging:
     com.netflix.discovery: OFF
   file: /tmp/logs/${spring.application.name}.log
 
-jwt:
-  exp: 3600
-  secret: x72RAQeDEoRrOuvIPTaIxkmUNWgyr6x0
+global:
+  super:
+    user: ${SUPER_USER:super.user}
+    pwd: ${SUPER_PWD:super.user}
+  jwt:
+    exp: 3600
+    secret: x72RAQeDEoRrOuvIPTaIxkmUNWgyr6x0
