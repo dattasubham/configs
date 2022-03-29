@@ -8,7 +8,7 @@ spring:
     name: scooz-gateway-api
   data:
     mongodb:
-      uri: mongodb+srv://admin:admin@cluster0.regfb.mongodb.net?authSource=admin&replicaSet=atlas-a6o6iy-shard-0&readPreference=primary&appname=scooz-gateway-api&ssl=true
+      uri: mongodb+srv://admin:admin@cluster0.regfb.mongodb.net/?authSource=admin&replicaSet=atlas-a6o6iy-shard-0&readPreference=primary&appname=scooz-gateway-api&ssl=true
       database: scooz_authentication
       auto-index-creation: true
 
